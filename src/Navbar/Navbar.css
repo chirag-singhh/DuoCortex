@@ -1,0 +1,74 @@
+/* Navbar.css */
+.navbar {
+  background-color: #f2f6fa;
+  padding: 1rem;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin: 0 1rem;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: #99a9d1;
+  font-weight: normal;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s;
+}
+
+.navbar-item a:hover {
+  color: grey;
+}
+
+.navbar-item.active a {
+  color: black;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color:#f2f6fa;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+  }
+
+  .navbar-list.open {
+    display: flex;
+  }
+
+  .navbar-item {
+    margin: 1rem 0;
+  }
+}

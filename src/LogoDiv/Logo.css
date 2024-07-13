@@ -1,0 +1,13 @@
+.logo{
+    height: 75px;
+    background-color: white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../assets/logoo.svg)
+}
+
+@media (max-width: 600px) {
+    .logo {
+      height: 100px;
+    }
+}
